@@ -2,3 +2,6 @@ name: RandomWarp1
 main: io.github.issac4892.randomwarp.Main
 description: yee
 version: 1.8.8
+commands:
+  rwarp:
+    description: yee
