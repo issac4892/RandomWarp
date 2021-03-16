@@ -12,10 +12,12 @@ class RandomWarp : CommandExecutor{
             sender.sendMessage("You can't use this command as Player!")
         }
         else{
-        for (player in Bukkit.getOnlinePlayers()) {
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "rtp $player ${args[0]}")
+            val players = Bukkit.getOnlinePlayers()
+
+            for (player in players) {
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "rtp $player ${args[0]}")
+            }
         }
-    }
         return true
     }
-}
+    }
